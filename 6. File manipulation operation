@@ -1,0 +1,14 @@
+ex:1
+
+file = open('geek.txt', 'w')
+file.write("This is the write command ")
+file.write("It allows you to write in a file")
+print("Successfully writing data in a file")
+file.close()
+
+ex4:
+
+with open("text.txt", 'w', encoding='utf-8') as f:
+    f.write("my first line \n")
+    f.write("this file \n")
+    f.write("contains three lines\n")
