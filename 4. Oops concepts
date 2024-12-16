@@ -1,1 +1,44 @@
+ex:2
 
+class Solution:
+    def __init__(self):
+        self.privatecounter = 0
+
+    def sum(self):
+        self.privatecounter += 1
+        print(self.privatecounter)
+
+count = Solution()
+count.sum()
+count.sum()
+count.sum()
+
+ex:3
+
+from abc import ABC, abstractmethod
+
+class car(ABC):
+    @abstractmethod
+    def mileage(self):
+        pass
+
+class Tesla(car):
+    def mileage(self):
+        print("\nThe mileage is 30KmpH")
+
+class suzuki(car):
+    def mileage(self):
+        print("The mileage is 25KmpH")
+
+class renault(car):
+    def mileage(self):
+        print("The mileage is 27KmpH\n")
+
+t = Tesla()
+t.mileage()
+
+s = suzuki()
+s.mileage()
+
+r = renault()
+r.mileage()
