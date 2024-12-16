@@ -1,1 +1,22 @@
+ex:1 
+
+a = float(input("Enter a number: "))
+b = float(input("Enter another number: "))
+
+if a > b:
+    print("First number is greater than second number")
+elif a == b:
+    print("Both numbers are equal")
+else:
+    print("Second number is greater than first number")
+
+ex:3
+
+print("Print Hello 10 times from the help of while loop")
+a = (1)
+while a <= 10:
+    print("Hello", a)
+    a = a + 1
+
+
 
