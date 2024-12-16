@@ -1,1 +1,28 @@
+ex:1
 
+print("Hello world")
+x = "Python"
+y = "is"
+z = "awesome"
+print(x, y, z)
+
+ex:2
+
+name = input("Enter Your Name: ")
+print("Hello " + name)
+print(type(name))
+
+ex:3
+
+a = int(input("Enter First Number: "))
+b = int(input("Enter Second Number: "))
+c = a + b
+print("Sum of Two Numbers:", c)
+
+ex:4
+
+integer_number = 123
+float_number = 1.23
+new_number = integer_number - float_number
+print("Value", new_number)
+print("Data Type", type(new_number))
