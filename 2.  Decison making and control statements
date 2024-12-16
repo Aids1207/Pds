@@ -13,10 +13,17 @@ else:
 ex:3
 
 print("Print Hello 10 times from the help of while loop")
-a = (1)
+a = 1
 while a <= 10:
     print("Hello", a)
     a = a + 1
 
+ex:5
+
+for i in range(1, 5):
+for j in range(i, 5):
+   print(i, end=" ")
+
+print("\n")
 
 
