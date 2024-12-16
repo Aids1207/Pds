@@ -1,0 +1,39 @@
+ex:1
+
+import pandas as pd
+
+Temp_List1 = [2, 4, 56, 7, 8, 8]
+pd_series = pd.Series([])
+print("Created Empty Series", pd_series)
+
+pd_series = pd.Series(Temp_List1)
+print("Print the entire series", pd_series)
+
+print("Print the first element of the Series", pd_series[0])
+
+
+.................................................................................................
+
+ex:2
+
+import pandas as pd
+
+List = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+index = [101, 102, 103, 104, 105, 106, 107, 108, 109, 110]
+dict = {1: 'Test_Value1', 2: 'Test_Value2', 3: 'Test_Value3'}
+
+pd_series_default_index = pd.Series(List)
+print("Pandas Series with default index: \n", pd_series_default_index)
+
+pd_series_manipulated_index = pd.Series(List, index)
+print("Pandas Series with Manipulated index:\n", pd_series_manipulated_index)
+
+pd_series_manipulated_data_type = pd.Series(List, dtype=str)
+print("Pandas Series with Manipulated index:\n", type(pd_series_manipulated_data_type))
+
+print("Print type of first element:\n", type(pd_series_manipulated_data_type[0]))
+
+pd_series_dict = pd.Series(dict)
+print("Pandas series with dictionary type: \n", pd_series_dict)
+
+print("Pandas series with dictionary type: \n", pd_series_dict[3])
